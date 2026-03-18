@@ -53,6 +53,7 @@ public abstract class Mine extends Unit{
 
     public void removeMineListener(MineListener el) { _listeners.remove(el); }
 
+    // 2 комит в свою ветку
     private void fireMineExploded(Cell owner){
         MineEvent e = new MineEvent(this);
         for (MineListener listener : _listeners) {
